@@ -21,7 +21,7 @@ if (buttonIndex == 0){
                         NSDictionary *message = @{@"status": @"This is an example of where to put the text you want tweeted."};
 
                         //URL to request
-                        NSURL *requestURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/update.json"];
+                        NSURL *requestURL = [NSURL URLWithString:@"https://api.twitter.com/1/statuses/update.json"];
 
                         //Make the request and set the Twitter account used
                         postRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodPOST URL:requestURL parameters:message];
